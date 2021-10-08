@@ -11,9 +11,9 @@
     "isolatedModules": true,
     "jsx": "react-jsx",
     "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ES2015"
+      "dom",
+      "dom.iterable",
+      "esnext"
     ],
     "module": "commonjs",
     "moduleResolution": "node",
