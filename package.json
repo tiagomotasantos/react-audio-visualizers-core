@@ -1,5 +1,5 @@
 {
-  "name": "react-audio-visualizers-core",
+  "name": "@tiagomotasantos/react-audio-visualizers-core",
   "version": "0.1.0",
   "private": false,
   "main": "dist/index.js",
@@ -62,6 +62,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/tiagomotasantos/react-audio-visualizers-core"
-  }
+    "url": "git+https://github.com/tiagomotasantos/react-audio-visualizers-core.git"
+  },
+  "description": "Core library for react-audio-visualizers.",
+  "bugs": {
+    "url": "https://github.com/tiagomotasantos/react-audio-visualizers-core/issues"
+  },
+  "homepage": "https://github.com/tiagomotasantos/react-audio-visualizers-core#readme",
+  "author": "Tiago Mota Santos",
+  "license": "ISC"
 }
