@@ -12,8 +12,8 @@ export const LoaderIcon = ({ color }: LoaderIconProps) => {
   return (
     <>
       <div style={style} className={cx(styles.loaderBar, styles.loaderBar1)}></div>
-      <div style={style} className={cx(styles.loaderBar, styles.loaderBar1)}></div>
-      <div style={style} className={cx(styles.loaderBar, styles.loaderBar1)}></div>
+      <div style={style} className={cx(styles.loaderBar, styles.loaderBar2)}></div>
+      <div style={style} className={cx(styles.loaderBar, styles.loaderBar3)}></div>
     </>
   );
 };
