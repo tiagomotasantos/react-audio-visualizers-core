@@ -1,4 +1,6 @@
 import { CSSProperties } from 'react';
+import { cx } from '@emotion/css';
+import { styles } from '../AudioVisualizer.styles';
 
 interface LoaderIconProps {
   color: string;
@@ -9,9 +11,9 @@ export const LoaderIcon = ({ color }: LoaderIconProps) => {
 
   return (
     <>
-      <div style={style} className="loader-bar loader-bar-1"></div>
-      <div style={style} className="loader-bar loader-bar-2"></div>
-      <div style={style} className="loader-bar loader-bar-3"></div>
+      <div style={style} className={cx(styles.loaderBar, styles.loaderBar1)}></div>
+      <div style={style} className={cx(styles.loaderBar, styles.loaderBar1)}></div>
+      <div style={style} className={cx(styles.loaderBar, styles.loaderBar1)}></div>
     </>
   );
 };

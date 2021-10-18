@@ -7,6 +7,7 @@ import { AudioVisualizerContextProvider } from './AudioVisualizerProvider';
 import { AudioVisualizerEventListener, AudioVisualizerEvents, emitter } from './events';
 import { LoaderIcon, PlayIcon, PauseIcon } from './icons';
 import { MainActionButton } from './MainActionButton';
+import { styles } from './AudioVisualizer.styles';
 
 const DEFAULT_ICONS_COLOR = 'white';
 const DEFAULT_SHOW_MAIN_ACTION_ICON = false;
@@ -87,7 +88,7 @@ export const AudioVisualizerUI = ({
   }, [mainActionRender, play, pause]);
 
   return (
-    <div className="audio-visualizer-ui">
+    <div className={styles.audioVisualizerUi}>
       {showLoaderIcon && loading ? (
         <LoaderIcon color={iconsColor} />
       ) : (

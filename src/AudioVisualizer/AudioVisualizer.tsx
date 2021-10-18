@@ -5,7 +5,7 @@ import { AudioVisualizerEventListener } from './events';
 import { AudioVisualizerProvider } from './AudioVisualizerProvider';
 import { AudioVisualizerUI } from './AudioVisualizerUI';
 import { AudioVisualizerScene } from './AudioVisualizerScene';
-import './styles.css';
+import { styles } from './AudioVisualizer.styles';
 
 export interface AudioVisualizerProps {
   children: ReactElement;
@@ -52,7 +52,7 @@ export const AudioVisualizer = ({
   onEvent,
 }: AudioVisualizerProps & AudioVisualizerCommonProps) => (
   <AudioVisualizerProvider>
-    <div className="audio-visualizer">
+    <div className={styles.audioVisualizer}>
       <AudioVisualizerUI
         audio={audio}
         smoothingTimeConstant={smoothingTimeConstant}
