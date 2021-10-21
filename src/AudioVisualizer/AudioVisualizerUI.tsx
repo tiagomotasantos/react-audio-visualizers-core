@@ -55,7 +55,13 @@ export const AudioVisualizerUI = ({
   }, [controller, setPlaying]);
   const onMouseEnter = useCallback(() => setHovering(true), [setHovering]);
   const onMouseLeave = useCallback(() => setHovering(false), [setHovering]);
-  
+
+  useEffect(() => {
+    return () => {
+      controller.current.pause();
+    };
+  }, []);
+
   useEffect(() => {
     emitter.subscribe(onEvent);
   }, [onEvent]);
