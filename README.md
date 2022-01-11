@@ -37,7 +37,7 @@ export const YourVisualizer = (commonProps: AudioVisualizerCommonProps) => (
 
 ## Documentation
 
-Check out the [documentation website](https://react-audio-visualizers.com/docs).
+Check out the [documentation website](https://docs-react-audio-visualizers.vercel.app/GettingStarted.html).
 Specially take a look at the architecture section to understand how react-audio-visualizers-core package interacts with the main react-audio-visualizers project.
 
 ## License
